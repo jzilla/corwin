@@ -1,7 +1,8 @@
 Missions are in the missions directory
 
-current points: 6
+current points: 8
 
 x  Mission 0001 - update the file - 3 pts 
 x  Mission 0002 - jquery hide-show elements - 3 pts.
-   Mission 0003 - remove - 2 pts.
+x  Mission 0003 - remove - 2 pts.
+   Mission 0004 - sliding - 3 pts.
