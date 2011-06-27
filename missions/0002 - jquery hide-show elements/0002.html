@@ -1,33 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
-  <head>
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
-	<script>
-	    $(function() {
-	        alert("this is the document ready function"); 
-	    });
-	</script>
-	<style>
-	   #actionDiv {
-	      border: 1px solid red;
-		  background-color: #fcc;
-		}
-    </style>
-  </head>
-  <body>
-	<div>
-	  <button id="hide">hide</button> <button id="show">show</button> <button id="toggle">toggle</button>
-	<div>
-	
-    <div id="actionDiv">
-	  This is the div you have to work with.
-	  <ul>
-	    <li>Hide button should hide this div</li>
-		<li>show button should show this div</li>
-		<li>toggle button should toggle this div, meaning if its hidden it should show, if its showing it should hide</li>
-	  </ul>
-	  you have to use jquery, which is already included.
-	</div>
-  </body>
+<head>
+  <script type="text/javascript"
+ src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+  <script>
+$(function() {
+console.log( $('#actionDiv') );
+$("#show").click(function () { $('#actionDiv').show('slow'); });
+$("#hide").click(function () { $('#actionDiv').hide('slow'); });
+$("#toggle").click(function () { $('#actionDiv').toggle('slow'); });
+});
+  </script>
+  <style>
+#actionDiv {
+border: 1px solid red;
+background-color: #fcc;
+}
+  </style>
+  <title></title>
+</head>
+<body>
+<div>
+<button id="hide">hide</button>
+<button id="show">show</button>
+<button id="toggle">toggle</button>
+<div>
+<div id="actionDiv">This is
+the div you have to work with.
+<ul>
+  <li>Hide button should hide this
+div</li>
+  <li>show button should show this
+div</li>
+  <li>toggle button should toggle
+this div, meaning if its hidden it should show, if its showing it
+should hide</li>
+</ul>
+you have to use jquery, which is already included.
+</div>
+</div>
+</div>
+</body>
 </html>
-			
-	
