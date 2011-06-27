@@ -1,28 +1,72 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
 <html>
-  <head>
-    <script type="text/javascript"src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
-    <script>
-	$(function() {
-		//document ready function
-	});
-	</script>
-  </head>
-  <body>
-	<p>Remove all, remove all the &lt;li&gt; tags</p>
-	<p>Remove One, remove one the &lt;li&gt; tags</p>
-	<p>see .remove() ":first", ":last"</p>
-	<p>you can not modify the html.</p>
-	<div>
-	  <button id="removeAll">Remove All</button>
-	  <button id="removeOne">Remove One</button>
-	  <ul>
-		<li>One</li>
-		<li>two</li>
-		<li>three</li>
-		<li>four</li>
-		<li>five</li>
-	  </ul>
-	</div>
-  </body>
+
+<head>
+
+  <script type="text/javascript"
+
+ src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+
+  <script>
+
+$(function() {
+
+//document ready function
+
+$("#removeAll").click(function () { $('li').remove(); });
+
+$("#removeOne").click(function () { $('li:first').remove(); });
+
+});
+
+  </script>
+
+  <title></title>
+
+</head>
+
+<body>
+
+<p>Remove
+
+all, remove all the &lt;li&gt; tags</p>
+
+<p>Remove One, remove one the
+
+&lt;li&gt; tags</p>
+
+<p>see .remove() ":first", ":last"</p>
+
+<p>you can not modify the html.</p>
+
+<div>
+
+<button id="removeAll">Remove
+
+All</button>
+
+<button id="removeOne">Remove
+
+One</button>
+
+<ul>
+
+  <li>One</li>
+
+  <li>two</li>
+
+  <li>three</li>
+
+  <li>four</li>
+
+  <li>five</li>
+
+</ul>
+
+</div>
+
+</body>
+
 </html>
-		
